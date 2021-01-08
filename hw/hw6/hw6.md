@@ -1,4 +1,27 @@
-// This file is part of www.nand2tetris.org
+# HW 
+# Bit
+<pre>// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/03/a/Bit.hdl
+
+/**
+ * 1-bit register:
+ * If load[t] == 1 then out[t+1] = in[t]
+ *                 else out does not change (out[t+1] = out[t])
+ */
+
+CHIP Bit {
+    IN in, load;
+    OUT out;
+
+    PARTS:
+    // Put your code here:
+    Mux(a=outBf, b=in, sel=load, out=mInOut);
+    DFF(in=mInOut, out=outBf, out=out);
+}</pre>
+# Register
+<pre>// This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
 // File name: projects/03/a/Register.hdl
@@ -31,4 +54,7 @@ CHIP Register {
     Bit(in=in[13], load=load, out=out[13]);
     Bit(in=in[14], load=load, out=out[14]);
     Bit(in=in[15], load=load, out=out[15]);
-}
+}</pre>
+
+# 圖片
+![](HW6.png)
