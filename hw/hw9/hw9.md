@@ -1,4 +1,6 @@
-// This file is part of www.nand2tetris.org
+# hw
+## Mult 
+<pre>// This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
 // File name: projects/04/Mult.asm
@@ -27,4 +29,8 @@ M=M+D // mult=>a=a+b do x times
 M=M-1
 D=M
 @12 //LOOP
-D;JNE
+D;JNE</pre>
+
+## 圖片
+![](hack.png)    
+![](finnnnn.png)
